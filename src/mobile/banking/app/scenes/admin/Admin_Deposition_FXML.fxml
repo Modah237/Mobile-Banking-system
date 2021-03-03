@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onMouseClicked="#checkBox_Handler" prefHeight="398.0" prefWidth="423.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobile.banking.app.scenes.admin.Admin_Deposition_FXMLController">
+    <stylesheets>
+        <URL value="@admin_deposition_fxml.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="155.0" layoutY="33.0" prefHeight="21.0" prefWidth="163.0" text="DEPOSITION">
+         <font>
+            <Font name="Times New Roman" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutY="71.0" prefHeight="5.0" prefWidth="481.0" />
+      <Label layoutX="45.0" layoutY="117.0" prefHeight="17.0" prefWidth="99.0" text="Account number" />
+      <Label layoutX="45.0" layoutY="159.0" prefHeight="17.0" prefWidth="99.0" text="Account name" />
+      <Label layoutX="45.0" layoutY="200.0" prefHeight="17.0" prefWidth="99.0" text="Amount" />
+      <TextField fx:id="Account_number" layoutX="185.0" layoutY="113.0" onAction="#Account_number_Handler" prefHeight="17.0" prefWidth="246.0" />
+      <TextField fx:id="Account_name" editable="false" layoutX="184.0" layoutY="155.0" prefHeight="17.0" prefWidth="246.0" />
+      <TextField fx:id="Amount" layoutX="184.0" layoutY="196.0" onAction="#Amount_Handler" prefHeight="25.0" prefWidth="246.0" />
+      <Button fx:id="Recharge" alignment="CENTER" layoutX="186.0" layoutY="331.0" mnemonicParsing="false" onAction="#Recharge_Handler" prefHeight="25.0" prefWidth="110.0" text="Recharge" textFill="#260ced">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="edit_AccName_CheckBox" layoutX="430.0" layoutY="155.0" mnemonicParsing="false" onAction="#checkBox_Handler" prefHeight="25.0" prefWidth="16.0" />
+      <Label fx:id="info" alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="228.0" prefHeight="100.0" prefWidth="336.0">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnHome" layoutX="215.0" layoutY="367.0" mnemonicParsing="false" onAction="#returnHome_Handler" prefHeight="31.0" prefWidth="52.0" text="🏠⬅" textFill="#8ada11">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="236.0" prefWidth="428.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobile.banking.app.scenes.admin.Admin_DeleteCustomer_FXMLController">
+    <stylesheets>
+        <URL value="@admin_deletecustomer_fxml.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="29.0" prefHeight="23.0" prefWidth="205.0" text="DELETE CUSTOMER">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="5.0" layoutY="64.0" prefHeight="0.0" prefWidth="437.0" />
+      <Label layoutX="167.0" layoutY="67.0" prefHeight="41.0" prefWidth="114.0" text="Account Number">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteBtn" alignment="CENTER" layoutX="157.0" layoutY="168.0" mnemonicParsing="false" onAction="#deleteBtn_Handler" prefHeight="41.0" prefWidth="135.0" text="DELETE" textFill="#e80808">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="accNum" alignment="CENTER" layoutX="122.0" layoutY="108.0" onAction="#Delete_Customer_Handler" prefHeight="41.0" prefWidth="205.0" promptText="XXX XXXXX XXXX">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="returnBtn" alignment="CENTER" layoutX="5.0" layoutY="188.0" mnemonicParsing="false" onAction="#returnBtn_Handler" prefHeight="41.0" prefWidth="32.0" text="↩" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

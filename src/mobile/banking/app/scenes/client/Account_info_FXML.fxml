@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="436.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mobile.banking.app.scenes.client.Account_info_FXMLController">
+    <stylesheets>
+        <URL value="@account_info_fxml.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="34.0" layoutY="65.0" prefHeight="37.0" prefWidth="183.0" text="WELCOME ,">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="Username" alignment="CENTER" layoutX="45.0" layoutY="113.0" prefHeight="28.0" prefWidth="262.0" text="Username">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Separator layoutX="6.0" layoutY="178.0" prefHeight="0.0" prefWidth="427.0" />
+        <Label layoutX="50.0" layoutY="215.0" prefHeight="21.0" prefWidth="221.0" text="SAVINGS/CURRENTS ACCOUNTS">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="Account_number" alignment="CENTER" layoutX="59.0" layoutY="256.0" prefHeight="17.0" prefWidth="152.0" text="Account_number">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="Amount" layoutX="268.0" layoutY="258.0" prefHeight="17.0" prefWidth="73.0" text="Amount">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="354.0" layoutY="260.0" text="BDT" />
+      <Separator layoutX="59.0" layoutY="235.0" prefHeight="3.0" prefWidth="211.0" />
+    </children>
+</AnchorPane>
